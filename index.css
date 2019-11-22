@@ -184,3 +184,13 @@ footer
    color: darkgray;
    font-size: 20px;
 }
+
+.result{
+	display: block;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	padding-top:20px;
+
+}

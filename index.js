@@ -22,15 +22,15 @@ document.getElementById("b").addEventListener("click",function(){
         
             for(var i=0;i<200;i++)
             {
-                var a=obj.drinks[0].strDrink;
+                var a=obj.drinks[i].strDrink;
                 var b=a.toUpperCase();
                 if(b.indexOf(d)>-1)
                 {
-                    document.getElementById("info").innerHTML = obj.drinks[0].strInstructions;
-                    document.getElementById("name").innerHTML = obj.drinks[0].strDrink;
-                    document.getElementById("image").setAttribute("src", obj.drinks[0].strDrinkThumb); 
-                    document.getElementById("type").innerHTML = obj.drinks[0].strAlcoholic;
-                    document.getElementById("abc").innerHTML = obj.drinks[0].strGlass;
+                    document.getElementById("info").innerHTML = obj.drinks[i].strInstructions;
+                    document.getElementById("name").innerHTML = obj.drinks[i].strDrink;
+                    document.getElementById("image").setAttribute("src", obj.drinks[i].strDrinkThumb); 
+                    document.getElementById("type").innerHTML = obj.drinks[i].strAlcoholic;
+                    document.getElementById("abc").innerHTML = obj.drinks[i].strGlass;
                 }
                 else{
                     alert("Invalid Search");
@@ -69,7 +69,7 @@ document.getElementById("b1").addEventListener("click",function()
                 divCaption.setAttribute("class","caption");
                 var p = document.createElement("p");
                 img.setAttribute("src",obj.drinks[i].strDrinkThumb);
-                img.setAttribute("class","thumbnail");
+                img.setAttribute("class","result");
                 p.innerHTML = obj.drinks[i].strDrink;
                 divCaption.appendChild(p);
                 divItems.appendChild(img);
@@ -108,7 +108,7 @@ document.getElementById("b2").addEventListener("click",function(c){
                 divCaption.setAttribute("class","caption");
                 var p = document.createElement("p");
                 img.setAttribute("src",obj.drinks[i].strDrinkThumb);
-                img.setAttribute("class","thumbnail");
+                img.setAttribute("class","result");
                 p.innerHTML = obj.drinks[i].strDrink;
                 divCaption.appendChild(p);
                 divItems.appendChild(img);
@@ -152,7 +152,7 @@ btn3.addEventListener("click",function(d){
                 divCaption.setAttribute("class","caption");
                 var p = document.createElement("p");
                 img.setAttribute("src",obj.drinks[i].strDrinkThumb);
-                img.setAttribute("class","thumbnail");
+                img.setAttribute("class","result");
                 p.innerHTML = obj.drinks[i].strDrink;
                 divCaption.appendChild(p);
                 divItems.appendChild(img);
